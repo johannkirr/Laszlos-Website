@@ -1,0 +1,817 @@
+html,
+
+body {
+    background-color: #7645;
+    height: 40%;
+    background-position: 200%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.bilderMap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 3em;
+}
+
+.cardBody {
+  display: block;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.firstBlock {
+  display: flex;
+  align-items: center;
+}
+
+.firstBlock h4 {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.firstBlock h5 {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.buch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.einzelBild {
+  background-color: rgb(244, 244, 227);
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 115%; 
+  margin-bottom: 1em;
+}
+
+.einzelBild img {
+  width: 40em;
+  height: 30em;
+   
+}
+
+.einzelBild h5 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 83%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 10px 0;
+}
+
+.einzelBild h4 {
+width: 95%;
+margin: 10px 0;
+}
+
+.shadow.sticky-top {
+  background-color: transparent;
+  transition: background-color 0.7s ease;
+  height: 110px;
+  padding: 0px;
+  margin-bottom: -49px;
+}
+
+.BergBild {
+  margin-bottom: 0px;
+}
+
+.Berg1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 580px;
+  margin-top: 0px;
+}
+
+ .containter.shadow.shadow-5{
+    margin-top: 50px;
+  
+  }
+
+.datenschutzText.paper-btn {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-right: 15px;
+  border: none;
+  padding: 0px;
+}
+
+.impressumText.paper-btn {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-right: 15px;
+  border: none;
+  padding: 0px;
+}
+
+.navbarButton2.paper-btn {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-right: 15px;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+  color: black;
+}
+
+.navbarButton1.paper-btn {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-right: 15px;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+  color: black;
+}
+
+.linkDiv {
+  text-align: center;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding-top: 30px;
+  transition: transform 0.4s ease-in-out;
+  transform: translateY(0);
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.link {
+  margin-top:20px;
+  font-size: x-large;
+}
+
+:hover.link {
+  color: grey;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+
+h1 {
+  font-family:'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-size: 36px;
+  font-weight: bold;
+  color: #706f6f;
+  
+}
+
+.gedichte {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gedichteÜberschrift {
+    margin-top: 50px;
+}
+
+.pText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-size: 18px;
+  color: #4e4848;
+  padding: 10px
+}
+
+.Wappen1.hidden {
+  transform: translateX(-100%);
+}
+
+.Wappen1 {
+  background-color: #ffffff;
+  transition: transform 0.4s ease-in-out;
+  transform: translateX(0);
+  z-index: 1;
+}
+
+.pText.hidden {
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: transform 0.6s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.pText {
+  background-color: transparent;
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.6s ease-in-out, opacity 0.8s ease-in-out;
+  z-index: 1;
+}
+
+.laszlo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  z-index: 1;
+}
+
+.zweiBilderDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+  
+}
+
+.footerButtons {
+  padding-top: 7px;
+  margin-bottom: 15px;
+  
+}
+
+.scroll-to-top-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+  margin-top: 15px;
+  color: black; 
+  background-color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top-button:hover {
+  background-color: black; /* Hintergrundfarbe ändern, wenn der Mauszeiger darüber schwebt */
+  transform: scale(1.1); /* Vergrößern Sie den Button leicht beim Überfahren */
+  color: white; /* Textfarbe ändern */
+}
+
+.linkButton {
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: black; 
+  background-color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 70px;
+  margin-top: -10px;
+  font-size: larger;
+  width: 50%;
+  padding: 15px;
+  margin-left: -20px;
+}
+
+.linkButton:hover {
+  align-items: center;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  font-size: larger;
+  background-color: black; /* Hintergrundfarbe ändern, wenn der Mauszeiger darüber schwebt */
+  transform: scale(1.1); /* Vergrößern Sie den Button leicht beim Überfahren */
+  color: white; /* Textfarbe ändern */
+}
+
+
+/*Admin CSS-Style für großen Bildschirm*/ 
+
+.Admin {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-top: 20px;
+  margin-left: 20px;
+  padding-bottom: 100px;
+}
+
+.gedichte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 300px;
+  margin: 10px;
+}
+
+.custom-file-upload {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  background-color: darkblue; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 5px; 
+  text-align: center;
+  width: 160px;
+}
+
+.custom-file-upload input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.button-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Stiländerungen beim Überfahren mit der Maus */
+.custom-file-upload:hover {
+  background-color: grey; /* Hintergrundfarbe ändern, wenn die Maus über dem Button ist */
+}
+
+
+.uploadImage {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 200px;
+  padding: 10px 20px;
+  background-color: darkblue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.uploadImage:hover {
+  background-color: grey;
+}
+
+.image-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column; 
+  padding: 5px;
+  margin-bottom: 10px;
+  border-color:white;
+  border-style:ridge;
+  border-width: 3px;
+  border-radius: 10px;
+}
+
+.image-name {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 45%;
+  width: 100px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+  html,
+
+  body {
+      background: #7645;
+      height: 0%;
+      margin: 0px;
+      padding: 0px;
+  }
+
+  .backDiv {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 43%;
+  }
+
+  .firstBlock {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .firstBlock h4 {
+    display: block;
+    align-items: center;
+  }
+  
+  .firstBlock h5 {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  .cardBody {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .linkButton {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: black; 
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 70px;
+    margin-top: -10px;
+    font-size: larger;
+    width: 50%;
+    padding: 15px;
+    margin-left: -20px;
+  }
+
+  .linkButton:hover {
+    align-items: center;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-size: larger;
+    background-color: black; /* Hintergrundfarbe ändern, wenn der Mauszeiger darüber schwebt */
+    transform: scale(1.1); /* Vergrößern Sie den Button leicht beim Überfahren */
+    color: white; /* Textfarbe ändern */
+  }
+
+  .bilderMap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+  }
+
+  .buch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -1.5em;
+  }
+
+  .bildDecoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .urlBild {
+    margin-top: 20px;
+  }
+
+  .einzelBild {
+    background-color: rgb(244, 244, 227);
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 116%; 
+    margin-bottom: 1em;   
+}
+
+.einzelBild img {
+    width: 22em;
+    height: 16em;     
+}
+
+.einzelBild h5 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.einzelBild h4 {
+  width: 96%;
+  margin: 10px 0px;
+}
+
+  .shadow.sticky-top {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Berg1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+  }
+
+  .gedichteText {
+    background-color: #7645;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .containter.shadow.shadow-5{
+    margin-top: 50px;
+    padding: 20px ;
+  }
+  
+  .linkDiv {
+    display: block;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: larger;
+    font-weight:bold;
+   
+  }
+  
+  .link {
+    margin-top:30px;
+    padding-bottom: 40px;
+
+  }
+
+  .navbarButton2.paper-btn {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 15px;
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+    color: black;
+  }
+  
+  .navbarButton1.paper-btn {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 15px;
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+    color: black;
+  }
+
+  :hover.link {
+    color: grey;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+  
+  h1 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    backdrop-filter: brightness(80%);
+  }
+  
+  .pText {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #666;
+    padding: 10px;
+   
+  }
+
+  .pText.hidden {
+    display: contents;
+  }
+
+
+.Wappen2.hidden {
+  transform: translateX(100%);
+ 
+}
+
+.Wappen2 {
+  background-color: #ffffff;
+  transition: transform 0.4s ease-in-out;
+  transform: translateX(0);
+  z-index: 1;
+}
+
+
+.laszlo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  z-index: 1;
+}
+
+.zweiBilderDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+  
+}
+
+.datenschutzText.paper-btn {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-right: 15px;
+  border: none;
+  padding: 0px;
+  
+}
+
+.impressumText.paper-btn {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-right: 15px;
+  border: none;
+  padding: 0px;
+
+}
+
+.footerButtons {
+  padding-top: 7px;
+  margin-bottom: 10px;
+}
+
+.scroll-to-top-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+  margin-top: 15px;
+  color: black; 
+  background-color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top-button:hover {
+  background-color: black; /* Hintergrundfarbe ändern, wenn der Mauszeiger darüber schwebt */
+  transform: scale(1.1); /* Vergrößern Sie den Button leicht beim Überfahren */
+  color: white; /* Textfarbe ändern */
+}
+
+/*Admin CSS-Style*/ 
+
+.Admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gedichte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 300px;
+  margin: 10px;
+}
+
+.custom-file-upload {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  background-color: darkblue; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 5px; 
+  text-align: center;
+  width: 160px;
+}
+
+.custom-file-upload input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.button-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Stiländerungen beim Überfahren mit der Maus */
+.custom-file-upload:hover {
+  background-color: black; /* Hintergrundfarbe ändern, wenn die Maus über dem Button ist */
+}
+
+
+.uploadImage {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+  padding: 10px 20px;
+  background-color: darkblue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.uploadImage:hover {
+  background-color: black;
+}
+
+.image-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 5px;
+  border-color:#333;
+  border-style:ridge;
+  border-width: 3px;
+  border-radius: 10px;
+}
+
+.image-name {
+  padding-left: 0px;
+  margin-top: 20px;
+}
+
+.button-container {
+  margin-bottom: 10px;
+  margin-left: 43vh;
+  background-color: black;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+
+}
