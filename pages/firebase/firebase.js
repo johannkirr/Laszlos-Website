@@ -1,6 +1,9 @@
+
+
 import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
-import { getFirestore } from "@firebase/firestore"
+import { getFirestore } from "@firebase/firestore";
+import { getAuth } from 'firebase/auth';
 
 
 // Your web app's Firebase configuration
@@ -13,7 +16,12 @@ const firebaseConfig = {
   appId: "1:428574656288:web:d2a316358a1e8edd9eb945"
 };
 
-// Initialize Firebase
+// init firebase and firestore
 const app = initializeApp(firebaseConfig);
-export const storage = getStorage(app)
-export const db = getFirestore()
+const storage = getStorage(app)
+const db = getFirestore()
+
+//init firebase auth 
+const auth = getAuth()
+
+export {storage, db, auth}

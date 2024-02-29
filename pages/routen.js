@@ -1,13 +1,10 @@
 import Image from 'next/image'
 import Link from "next/link"
-import jsonRoute1 from '../jsondb/Route'
+import jsonRoute from '../jsondb/Route'
 import { MapIcon } from '@heroicons/react/24/solid'
 import { ClockIcon } from '@heroicons/react/24/solid'
 
-
-
-export default function Route1() {
-
+export default function Route() {
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -17,12 +14,9 @@ export default function Route1() {
     });
   };
 
-
   return (
-    
        <div className="bilderMap">
-
-{jsonRoute1.route1.map((map) => (
+            {jsonRoute.route.map((map) => (
                 <div key={map.id} className="einzelBild">
                     <Link href={`/liste/${map.url}`}>
                         <Image variant="top" src={map.bild1} width={180} height={100} alt="Skizze" className="image-width-100"/>

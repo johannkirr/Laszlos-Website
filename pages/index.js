@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
 import Image from "next/image";
-import Link from 'next/link';
 import Berg from '../public/bilder/Berg.jpg'
-import coverPicture2 from '../public/bilder/Wappen2.jpg'
-import coverPicture3 from '../public/bilder/laszlo.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Home() {
@@ -12,7 +9,11 @@ export default function Home() {
 
     useEffect(() => {
         function handleScroll() {
-            setHidden(window.pageYOffset > 350 && window.innerWidth > 800);
+          if(window.scrollY > 10 && window.innerWidth > 800)
+            setHidden(false);
+          else {
+            setHidden(true)
+          }
         }
 
         window.addEventListener('scroll', handleScroll);
@@ -21,17 +22,20 @@ export default function Home() {
             };
         },[]);
 
+
+
   return (
     <div className="indexBody">
 
       <div className="BergBild">
-        <Image className='Berg1' src={Berg} width={850} height={120} alt={'Berg'} style={{borderRadius:"30px", border:"none"}} />
+        <Image className='Berg1' src={Berg} width={850} height={120} alt={'Berg'}/>
       </div>
    
+   <div>
     <div className="containter shadow shadow-5">
 
     <h1>Sziasztok zarándokok</h1>
-     <p className={`pText ${hidden ? '' : 'hidden'}`}>
+     <p className={`pText ${hidden && 'hidden'}`}> 
      Engedje meg, hogy bemutatkozzam. Laszlo Földessy vagyok, és a Nitra régióban születtem. Ez az otthonom és az ősaimé. Szeretetem 
      ez a régió és annak fejlődése olyannyira meghatározott, hogy sok verset írtam róla.
      <br/>
@@ -45,23 +49,19 @@ export default function Home() {
       <br/>
       <br/>
       Alig várom, hogy találkozhassunk.
+      <br/>
+      <br/>
+      <br/>
+      <br/>
      </p>
    </div>
 
-    <div className='laszlo'>
-      <Image src={coverPicture3} className="img-fluid rounded no-border" width={400} height={200} alt='wappen3' />
-    </div>
-
-   <div className="zweiBilderDiv">
-
-        <div className={`Wappen2 ${hidden ? '' : 'hidden'}`} >
-            <Image src={coverPicture2} className="img-fluid rounded no-border" width={200} height={100} alt={'wappen2'}/>
-        </div>
-    </div>
+   </div>
 
    </div>
   )
 }
+
 
 
    
